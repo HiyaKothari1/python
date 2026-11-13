@@ -75,6 +75,15 @@ with open ("sample.txt" , "r") as f:
              print(f"word found at line{line}")
              break
          line+=1
-         
 
+
+#list comprehensions
+squares = []
+
+for i in range(6):
+    squares.append(i*i)
+
+print(squares)    
+#this can be done in one line using list comprehensions
+sq = [i*i for i in range(6)]
    
