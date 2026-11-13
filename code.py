@@ -65,3 +65,16 @@ acc1 = BankAccount("Rahul Kumar", 10000)
 acc1.set_balance(20000)
 print(acc1.name, acc1._BankAccount__balance)
 
+data = True
+line = 1
+with open ("sample.txt" , "r") as f:
+    while data:
+         
+         data = f.readline()
+         if("python " in data):
+             print(f"word found at line{line}")
+             break
+         line+=1
+         
+
+   
