@@ -27,3 +27,22 @@ l2 = Laptop("8gb","256gb")
 
 l1.get_storage_type()
 l2.calc_discount(40000,10)
+ #problem 
+class Store:
+    count = 0
+    def __init__(self,name,price):
+        self.name=name
+        self.price=price
+        Store.count+=1
+
+    def get_info(self):
+        print(f"price of {self.name} is{self.price}") 
+
+    @classmethod
+    def get_count(cls):
+        print(f"total objects created {cls.count}")
+
+s1 = Store("phone", 10000)
+s2 = Store("laptop", 20000)
+s3 = Store("pc", 30000)  
+Store.get_count()      
