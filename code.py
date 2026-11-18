@@ -85,5 +85,7 @@ for i in range(6):
 
 print(squares)    
 #this can be done in one line using list comprehensions
-sq = [i*i for i in range(6)]
+import sys
+print(sys.executable)
+
    
